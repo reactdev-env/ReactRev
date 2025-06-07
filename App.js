@@ -1,8 +1,19 @@
 //Nested Elements
 
-const parent=React.createElement("div", {id:"parent"}, React.createElement("div", {id:"child"}, 
-[React.createElement("h1",{},"I am h1 Tag"),React.createElement("h2",{},"I am h2 Tag")]));
+const parent=React.createElement("div",
+ {id:"parent"}, 
+
+ React.createElement("div", {id:"child"}, 
+[React.createElement("h1",{},"I am h1 Tag"),
+React.createElement("h2",{},"I am h2 Tag")]),
+
+React.createElement("div", {id:"child2"}, 
+[React.createElement("h1",{},"I am h1 Tag"),
+React.createElement("h2",{},"I am h2 Tag")]));
+
+
 console.log(parent);
+
 const root=ReactDOM.createRoot(document.getElementById("root"));
 
 
@@ -14,3 +25,10 @@ const root=ReactDOM.createRoot(document.getElementById("root"));
 //const ironman=React.createElement("h1",{},"This is react")
 //const Jarvis=ReactDOM.createRoot(document.getElementById("Helix"));
 root.render(parent);
+
+
+//Hello world using JS, React
+//Bring react into our code
+//Making sure that scriptis bottom of the body.
+//React element is object
+//createroot and inject the root into the ReactDOM and rendering the heading or object into the React DOM
