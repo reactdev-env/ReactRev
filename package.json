@@ -1,0 +1,32 @@
+{
+  "name": "reactrev",
+  "version": "1.0.0",
+  "description": "React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactdev-env/ReactRev.git"
+  },
+  "keywords": [
+    "react",
+    "revision",
+    "Om",
+    "namah",
+    "shivaya"
+  ],
+  "author": "Pavan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reactdev-env/ReactRev/issues"
+  },
+  "homepage": "https://github.com/reactdev-env/ReactRev#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
