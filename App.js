@@ -9,6 +9,7 @@ const parent = React.createElement(
     "div",
     { id: "child" },
     [
+    //Always use a stable unique key when rendering multiple elements, especially inside arrays. This helps React track changes accurately during updates or re-renders.
       React.createElement("h1", { key: "h1-1" }, "I am h1 Tag"),
       React.createElement("h2", { key: "h2-1" }, "I am h2 Tag")
     ]

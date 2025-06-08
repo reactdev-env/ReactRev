@@ -685,6 +685,7 @@ const parent = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
 }, /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
     id: "child"
 }, [
+    //Always use a stable unique key when rendering multiple elements, especially inside arrays. This helps React track changes accurately during updates or re-renders.
     /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
         key: "h1-1"
     }, "I am h1 Tag"),
