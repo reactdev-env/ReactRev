@@ -1,48 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//Nested Elements
-
-const parent = React.createElement(
-  "div",
-  { id: "parent" },
-  React.createElement(
-    "div",
-    { id: "child" },
-    [
-    //Always use a stable unique key when rendering multiple elements, especially inside arrays. This helps React track changes accurately during updates or re-renders.
-      React.createElement("h1", { key: "h1-1" }, "I am h1 Tag"),
-      React.createElement("h2", { key: "h2-1" }, "I am h2 Tag")
-    ]
-  ),
-  React.createElement(
-    "div",
-    { id: "child2" },
-    [
-      React.createElement("h1", { key: "h1-2" }, "I am h1 Tag"),
-      React.createElement("h2", { key: "h2-2" }, "I am h2 Tag")
-    ]
-  )
-);
 
 
+const heading= React.createElement("h1",{id:"react"}, "This is the Object");
+//const root=ReactDOM.createRoot(document.getElementById("root"));
+console.log(heading);
 
-console.log(parent);
-
+const reactJSX=<h1 id="reactJSX">Hello element was created using JSX</h1>
 const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(reactJSX);
 
 
-//Ikkada parent anedi oka object and the object is the react element. The react element becomes the html that browsers understand
-
-//ReactElemnt(object)=> Html(Browser understands)
-//if there are more than one child in the object we can wrap inside the [] brackets. The array contains only child elemnts of object.
-
-//const ironman=React.createElement("h1",{},"This is react")
-//const Jarvis=ReactDOM.createRoot(document.getElementById("Helix"));
-root.render(parent);
-
-
-//Hello world using JS, React
-//Bring react into our code
-//Making sure that scriptis bottom of the body.
-//React element is object => Html browser understands
-//createroot and inject the root into the ReactDOM and rendering the heading or object into the React DOM
+//root.render(heading);
