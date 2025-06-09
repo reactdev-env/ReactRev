@@ -3,7 +3,7 @@ import react from "react";
 //This is also a valid way of writing the Component
 const comp1=()=><h1>This is a react component</h1>
 
-//This is alsoi a valid way of writing the component
+//This is alsoi a valid way of writing the component. But this is the preferrable way of preferable way writing the code with return.
 const comp1=()=>{
     return(
         <div>
