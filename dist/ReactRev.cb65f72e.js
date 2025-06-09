@@ -682,21 +682,64 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _comp1 = require("./Comp1");
 var _comp1Default = parcelHelpers.interopDefault(_comp1);
+const Comp2 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "This is the Comp2"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 9,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 8,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Comp2;
+const Comp3 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Comp2, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 17,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "This is the Comp3"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 18,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 16,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = Comp3;
+//Now I need to put comp2 in Comp3
 //New way of writing react elemnt in react
 const reactJSX = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "reactJSX",
     children: "Hello element was created using JSX"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 7,
+    lineNumber: 27,
     columnNumber: 16
 }, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _comp1Default.default), {}, void 0, false, {
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Comp3, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 9,
+    lineNumber: 29,
     columnNumber: 13
 }, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "Comp2");
+$RefreshReg$(_c1, "Comp3");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
