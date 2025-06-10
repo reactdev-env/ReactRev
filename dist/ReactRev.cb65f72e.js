@@ -723,14 +723,7 @@ const Comp3 = ()=>{
 _c1 = Comp3;
 //Now I need to put comp2 in Comp3
 //New way of writing react elemnt in react
-const reactJSX = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "reactJSX",
-    children: "Hello element was created using JSX"
-}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 27,
-    columnNumber: 16
-}, undefined);
+//const reactJSX=<h1 id="reactJSX">Hello element was created using JSX</h1>
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Comp3, {}, void 0, false, {
     fileName: "App.js",
@@ -746,7 +739,7 @@ $RefreshReg$(_c1, "Comp3");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Comp1":"du6BB"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./Comp1":"du6BB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -16145,7 +16138,45 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"jMk1U"}],"du6BB":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9f31 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9f31.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9f31.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Comp1 = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "This is the Comp1"
+        }, void 0, false, {
+            fileName: "Comp1.js",
+            lineNumber: 6,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "Comp1.js",
+        lineNumber: 5,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Comp1;
+exports.default = Comp1;
+var _c;
+$RefreshReg$(_c, "Comp1");
+
+  $parcel$ReactRefreshHelpers$9f31.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -18453,44 +18484,6 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"du6BB":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$9f31 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$9f31.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9f31.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const Comp1 = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "This is the Comp1"
-        }, void 0, false, {
-            fileName: "Comp1.js",
-            lineNumber: 6,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "Comp1.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Comp1;
-exports.default = Comp1;
-var _c;
-$RefreshReg$(_c, "Comp1");
-
-  $parcel$ReactRefreshHelpers$9f31.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["icAAj","blcJa"], "blcJa", "parcelRequire230d", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["icAAj","blcJa"], "blcJa", "parcelRequire230d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=ReactRev.cb65f72e.js.map
